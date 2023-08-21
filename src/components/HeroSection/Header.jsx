@@ -25,11 +25,13 @@ export const Header = () => {
             {HeaderConstant.OCCUPATION}
           </div>
           <div className="ui-header__contentWrapper__descriptionWrapper__impLinks">
-            <span style={{ color: "#fff" }}>
-              Projects below 👇
-            </span>
+            <span style={{ color: "#fff" }}>Projects below 👇</span>
             <span>
-              <a href="" target="_blank" rel="noreferrer nofollow">
+              <a
+                href="https://drive.google.com/drive/u/2/folders/1O2puCpnaOkCawyO4KBYXNiCtsydeNnYS"
+                target="_blank"
+                rel="noreferrer nofollow"
+              >
                 <span style={{ color: "#fff", marginLeft: "50px" }}>
                   Resume 📩
                 </span>

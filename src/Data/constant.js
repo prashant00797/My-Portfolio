@@ -122,5 +122,5 @@ export const AboutData = {
   img: AboutImg,
   RESUME_HERE: "here.",
   resumeUrl:
-    "https://drive.google.com/file/d/1yC650nhUGQdzXFUgZ1z4_VheOGrNSLVD/view?usp=sharing",
+    "https://drive.google.com/drive/u/2/folders/1O2puCpnaOkCawyO4KBYXNiCtsydeNnYS",
 };
