@@ -1,0 +1,46 @@
+@import "../../scss/mixin/padding.scss";
+
+.ui-otherprojects {
+  @include pagepadding;
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #e5e5e53b;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+  }
+
+  &__imagewrapper {
+    flex: 0 0 30%;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 15px;
+    }
+    &__logo {
+      padding: 0px 20px;
+      border-radius: 5px;
+    }
+    &__title {
+      &__url {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: #fca311;
+          border-bottom: 1px solid #fca311;
+        }
+      }
+    }
+  }
+}

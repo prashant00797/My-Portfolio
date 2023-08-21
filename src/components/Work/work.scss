@@ -1,0 +1,75 @@
+.ui-work {
+  &__wrapper {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(252, 163, 17, 0.2);
+    border-bottom: 2px solid #ffffff;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__imageWrapper {
+      margin-top: 15px;
+      background: linear-gradient(to right, #e5e5e5 7px, transparent 4px) 0 0,
+        linear-gradient(to left, #e5e5e5 7px, transparent 4px) 100% 100%,
+        linear-gradient(to bottom, #e5e5e5 7px, transparent 4px) 0 0,
+        linear-gradient(to top, #e5e5e5 7px, transparent 4px) 100% 100%;
+
+      background-repeat: no-repeat;
+      background-size: 60px 50px;
+      &__image {
+        padding: 20px;
+        @media screen and (max-width: 768px) {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    &__descriptionWrapper {
+      padding: 15px;
+      margin-left: 5%;
+      color: #14213d;
+      &__title {
+        font-weight: 600;
+        font-size: 16px;
+      }
+      &__description {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 14px;
+        margin-top: 10px;
+        line-height: 1.5;
+      }
+    }
+    &__linkWrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+      width: 29%;
+
+      @media screen and (max-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      &__links {
+        &--github,
+        &--liveproject {
+          color: inherit;
+          transition: all 0.3s ease-in;
+          &:hover {
+            color: #fca311;
+          }
+        }
+        &--liveproject {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

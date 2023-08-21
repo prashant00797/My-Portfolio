@@ -1,0 +1,58 @@
+@import "../../scss/variables.scss";
+
+.ui-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  height: $navbar-height-web;
+  padding: 0px 40px;
+  top: 0;
+  background-color: #ffffff;
+  color: #14213d;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+  z-index: 2;
+
+  &__left {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    &__link {
+      cursor: pointer;
+      transition: all 1s ease-out;
+      width: 20%;
+
+      &:hover {
+        color: #fca311;
+      }
+    }
+  }
+  &__right {
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    width: 38%;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
+    &__links {
+      cursor: pointer;
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        color: #fca311;
+      }
+    }
+  }
+
+  &__sidebar {
+    z-index: 2;
+    &__logoWrapper {
+      text-align: end;
+      &__logo {
+        width: fit-content;
+      }
+    }
+  }
+}

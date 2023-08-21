@@ -1,0 +1,213 @@
+@import "../../scss/mixin/hover.scss";
+@import "../../scss/mixin/padding.scss";
+
+.ui-header {
+  &__contentWrapper {
+    @include pagepadding;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #14213d;
+    position: relative;
+
+    @media (min-width: 0px) and (max-width: 1024px) {
+      flex-direction: column;
+    }
+
+    &__descriptionWrapper {
+      z-index: 1;
+
+      @media (min-width: 0px) and (max-width: 1024px) {
+        margin-top: 50px;
+        text-align: center;
+      }
+      &__salutation,
+      &__myinfo,
+      &__work {
+        line-height: 1.5;
+        z-index: 1;
+        color: #ffffff;
+      }
+
+      &__salutation,
+      &__work {
+        font-size: 40px;
+      }
+      &__myinfo {
+        font-size: 64px;
+      }
+      &__work {
+        font-weight: 600;
+      }
+      &__impLinks {
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__imageWrapper {
+      z-index: 1;
+    }
+
+    &__backgroundWrapper {
+      &__htmlWrapper,
+      &__cssWrapper,
+      &__jsWrapper,
+      &__reactWrapper,
+      &__scssWrapper,
+      &__gitWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background-color: #e5e5e5;
+        transition: all 0.3s ease-in-out;
+        &__logo {
+          position: absolute;
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      &__htmlWrapper {
+        left: 6%;
+        top: 50%;
+        animation: movehtml 5s infinite alternate;
+        @keyframes movehtml {
+          from {
+            top: 11%;
+          }
+          to {
+            top: 40%;
+            @include flotingiconhover;
+          }
+        }
+      }
+      &__jsWrapper {
+        left: 29%;
+        top: 57%;
+        animation: movejs 5s infinite alternate;
+        @keyframes movejs {
+          from {
+            top: 10%;
+          }
+          to {
+            top: 41%;
+            @include flotingiconhover;
+          }
+        }
+      }
+      &__cssWrapper {
+        left: 52%;
+        top: 9%;
+        animation: movecss 5s infinite alternate;
+        @keyframes movecss {
+          from {
+            top: 12%;
+          }
+          to {
+            top: 42%;
+            @include flotingiconhover;
+          }
+        }
+      }
+
+      &__reactWrapper {
+        left: 82%;
+        top: 11%;
+        animation: movereact 5s infinite alternate;
+        &:hover {
+          z-index: 9999;
+        }
+        @keyframes movereact {
+          from {
+            top: 17%;
+          }
+          to {
+            top: 43%;
+            @include flotingiconhover;
+          }
+        }
+      }
+
+      @media (min-width: 0px) and (max-width: 1024px) {
+        &__htmlWrapper,
+        &__cssWrapper,
+        &__jsWrapper,
+        &__reactWrapper {
+          width: 70px;
+          height: 70px;
+
+          &__logo {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        &__htmlWrapper {
+          left: 14%;
+          top: 5%;
+          animation: movehtmlm 5s infinite alternate;
+          @keyframes movehtmlm {
+            0% {
+              transform: translate(0, 0);
+            }
+
+            100% {
+              transform: translate(90px, 90px);
+              @include flotingiconhover;
+            }
+          }
+        }
+        &__cssWrapper {
+          left: 5%;
+          top: 40%;
+          animation: movecssm 5s infinite alternate;
+          @keyframes movecssm {
+            0% {
+              transform: translate(0, 0);
+            }
+
+            100% {
+              transform: translate(50px);
+              @include flotingiconhover;
+            }
+          }
+        }
+        &__jsWrapper {
+          left: 6%;
+          top: 43%;
+          animation: movejsm 5s infinite alternate;
+          @keyframes movejsm {
+            0% {
+              transform: translate(0px, 200px);
+            }
+            100% {
+              transform: translate(127px, 110px);
+              @include flotingiconhover;
+            }
+          }
+        }
+        &__reactWrapper {
+          left: 69%;
+          top: 40%;
+          animation: movereactm 5s infinite alternate;
+          @keyframes movereactm {
+            0% {
+              transform: translate(0, 0);
+            }
+
+            100% {
+              transform: translate(0px);
+              @include flotingiconhover;
+            }
+          }
+        }
+      }
+    }
+  }
+}

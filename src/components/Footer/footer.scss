@@ -1,0 +1,67 @@
+@import "../../scss/mixin/padding.scss";
+
+.ui-footer {
+  background-color: #ffffff;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px -1px 2px rgba(0, 0, 0, 0.25));
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: 80px;
+  }
+
+  &__wrapper {
+    @include pagepadding;
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      width: 60%;
+    }
+
+    &__copyrightWrapper {
+      @media screen and (max-width: 768px) {
+        margin-bottom: 10px;
+        width: max-content;
+      }
+
+      &__copyright {
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+
+    &__linksWrapper {
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      @media screen and (max-width: 768px) {
+        width: auto;
+      }
+
+      &__links {
+        padding: 0px 20px;
+        &__logo {
+          cursor: pointer;
+          width: 25px;
+          height: 25px;
+          &--linkedIn {
+            margin-top: 2px;
+          }
+          &--gmail {
+            margin-top: -2px;
+          }
+        }
+      }
+    }
+  }
+}
