@@ -50,7 +50,7 @@ export const MajorProjects = [
         id: 2,
         linkTitle: "Live Project",
         classname: "liveproject",
-        url: "https://github.com/prashant00797/Weather-App",
+        url: "https://weatherappaccu.netlify.app",
       },
     ],
   },
