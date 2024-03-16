@@ -29,7 +29,7 @@ export const NavbarConstant = {
 export const HeaderConstant = {
   SALUTATION: "Hello Everyone!",
   NAME: "My Self Prashant Nath",
-  OCCUPATION: "A Front End Developer from INDIA.",
+  OCCUPATION: "Front End Developer & CSM®️.",
 };
 
 export const MajorProjects = [
@@ -112,7 +112,11 @@ export const AboutData = {
   COPYRIGHT: "@designed and developed with 💟 by Prashant.",
   PERSONAL_INFO_GREETINGS: `Hello Everyone!! First of thank you for visiting my page and willing to know about me. So lets get started!!!`,
 
-  PERSONAL_INFO_ACADEMIC: ` I was born  and brought up in Itanagar, Arunachal Pradesh India👶. I did my schooling from Kendriya Vidyalaya No.2, Itanagar🎒. I passed my 10th grade with CGPA of 10/10 and my 12th grade with a percentage of 82.2 with Science Background 🏫. I moved to Shillong for my Graduation in Bachelor of Technology, in the field of Computer Science and Engineer 🖥️. I graduated in 2020 with a CGPA of 8.25/10. After that I started my career in Sep 2021 in a startup based in Gurugram and currently i currently work there as an Development Engineer - Frontend👨‍💻. My current Tech Stack includes HTML, CSS/SASS, Javascript,React Js, Redux, Webpack and UI/UX design.I am familiar with Agile methodologies and always try to learn new things and put my hard work and  dedication towards my Org.`,
+  PERSONAL_INFO_ACADEMIC: `Born and raised in Itanagar, Arunachal Pradesh, India 👶, I attended Kendriya Vidyalaya No.2 for my schooling. Achieving a perfect CGPA of 10/10 in my 10th grade and securing 82.2% in my 12th grade with a Science background, I laid a strong foundation for my academic journey 🧑‍🎓.
+
+My pursuit of higher education led me to Shillong, where I graduated with a Bachelor of Technology degree in Computer Science and Engineering in 2020, attaining a CGPA of 8.25/10. Following my graduation, I embarked on a professional journey that saw me contributing to both Cognizant and a product engineering startup, Avizva Solutions Pvt. Ltd., where I honed my skills in various aspects of technology and project management 🧑‍🔬.
+
+Driven by a keen interest in Agile methodologies, I undertook the Certified Scrum Master (CSM®) certification to enhance my expertise in this field. Currently, my tech stack includes proficiency in HTML, CSS/SASS, JavaScript, React.js, Redux, Webpack, as well as Agile Web Development and Scrum framework. I am deeply familiar with Agile methodologies and consistently strive to expand my knowledge base, always dedicating myself to the continuous improvement of both my skills and the organizations I serve.🧑‍💻`,
 
   PERSONAL_INFO_ACADEMIC__RESUME: `This was all about my Professional Background 👨‍🏫. You can download my resume`,
 
